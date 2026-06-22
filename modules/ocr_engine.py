@@ -22,12 +22,16 @@ import numpy as np
 from typing import List, Dict, Optional, Tuple
 import traceback
 
+# MUST set SSL bypass BEFORE importing easyocr (urllib caches SSL context on import)
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 try:
     import easyocr
     EASYOCR_AVAILABLE = True
 except ImportError:
     EASYOCR_AVAILABLE = False
-    print("[WARNING] EasyOCR 未安装，请运行: pip install easyocr")
+    print("[WARNING] EasyOCR not installed. Run: pip install easyocr")
 
 from config import (
     OCR_CONFIDENCE_THRESHOLD,
@@ -67,18 +71,14 @@ class OCREngine:
                 "注意: 首次运行时 EasyOCR 会自动下载英文识别模型 (~68MB)"
             )
 
-        # Fix SSL cert issue on some cloud servers
-        import ssl
-        ssl._create_default_https_context = ssl._create_unverified_context
-
         try:
             gpu = OCR_GPU_ENABLED
             self._reader = easyocr.Reader(
                 OCR_LANGUAGES,
                 gpu=gpu,
                 model_storage_directory=str(EASYOCR_MODEL_DIR),
-                download_enabled=False,  # Use local models only (no network)
-                verbose=False,
+                download_enabled=True,
+                verbose=True,
             )
             self._initialized = True
             print(f"[OCR] EasyOCR initialized (GPU={gpu}, model_dir={EASYOCR_MODEL_DIR})")
@@ -90,7 +90,7 @@ class OCREngine:
                     gpu=False,
                     model_storage_directory=str(EASYOCR_MODEL_DIR),
                     download_enabled=True,
-                    verbose=False,
+                    verbose=True,
                 )
                 self._initialized = True
             else:
