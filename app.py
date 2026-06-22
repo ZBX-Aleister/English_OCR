@@ -161,12 +161,14 @@ def create_ui():
         with gr.Accordion("⚙️ 设置", open=False):
             with gr.Row():
                 with gr.Column(scale=3):
-                    api_key_input = gr.Textbox(
-                        label="API Key",
-                        placeholder="输入后点保存，下次自动加载",
-                        value=load_api_key() if load_api_key() != "your-api-key-here" else "",
-                        info=f"保存在 {API_KEY_FILE.name}",
-                    )
+                    has_key = load_api_key() != "your-api-key-here"
+                api_key_input = gr.Textbox(
+                    label="API Key",
+                    placeholder="已内置（环境变量加载）" if has_key else "输入后点保存",
+                    type="password",
+                    value=load_api_key() if has_key else "",
+                    info="输入时可见，保存后黑点隐藏" if not has_key else "已配置（黑点隐藏）",
+                )
                 with gr.Column(scale=1):
                     save_key_btn = gr.Button("💾 保存", size="sm")
                     api_key_status = gr.Textbox(value=check_api_key_status(), interactive=False, lines=1)
