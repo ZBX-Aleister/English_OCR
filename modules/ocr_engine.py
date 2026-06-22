@@ -77,7 +77,7 @@ class OCREngine:
                 OCR_LANGUAGES,
                 gpu=gpu,
                 model_storage_directory=str(EASYOCR_MODEL_DIR),
-                download_enabled=True,
+                download_enabled=False,  # Use local models only (no network)
                 verbose=False,
             )
             self._initialized = True
