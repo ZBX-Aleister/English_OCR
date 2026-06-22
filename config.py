@@ -19,6 +19,11 @@ English OCR 手写识别翻译助手 - 全局配置文件
 
 import os
 from pathlib import Path
+import ssl
+
+# ---- Fix SSL cert verification (cloud servers often lack CA certs) ----
+ssl._create_default_https_context = ssl._create_unverified_context
+os.environ.setdefault("PYTHONHTTPSVERIFY", "0")
 
 # ==================== 项目根目录 ====================
 ROOT_DIR = Path(__file__).parent.absolute()
