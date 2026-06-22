@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile config.py)",
+      "Bash(python -m py_compile modules/preprocessing.py)",
+      "Bash(python -m py_compile modules/prompts.py)",
+      "Bash(python -m py_compile utils/text_cleaner.py)",
+      "Bash(python -m py_compile knowledge/build_kb.py)",
+      "Bash(python -m py_compile modules/ocr_engine.py)",
+      "Bash(python -m py_compile modules/llm_client.py)",
+      "Bash(python -m py_compile modules/knowledge_base.py)",
+      "Bash(python -m py_compile app.py)",
+      "Bash(pip install *)",
+      "Bash(python knowledge/build_kb.py)",
+      "Bash(set HF_HUB_DOWNLOAD_TIMEOUT=3)",
+      "Bash(python -c ' *)",
+      "Bash(python app.py)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:7860)",
+      "Bash(dir api_key.txt)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :7860)",
+      "Bash(taskkill *)",
+      "Bash(python *)",
+      "Bash(set no_proxy=localhost,127.0.0.1)",
+      "Bash(curl *)",
+      "Bash(findstr \":7860.*LISTENING\")",
+      "Bash(pip show *)",
+      "Bash(set http_proxy=)",
+      "Bash(set https_proxy=)",
+      "Bash(set HTTP_PROXY=)",
+      "Bash(set HTTPS_PROXY=)",
+      "Bash(set NO_PROXY=localhost,127.0.0.1)",
+      "Bash(git init *)",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git commit *)",
+      "Bash(git config *)"
+    ]
+  }
+}

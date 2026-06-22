@@ -1,0 +1,186 @@
+{
+  "description": "常见英语语法错误模式库 - 考研/四六级写作高频错误",
+  "version": "1.0",
+  "entries": [
+    {
+      "id": "g001",
+      "category": "主谓一致",
+      "pattern": "主语单数 + 谓语动词原形",
+      "error_example": "The student study hard every day.",
+      "correction": "The student studies hard every day.",
+      "explanation": "当主语为第三人称单数时，一般现在时的谓语动词需加 -s 或 -es。",
+      "keywords": ["subject-verb agreement", "third person singular", "present tense"]
+    },
+    {
+      "id": "g002",
+      "category": "时态",
+      "pattern": "现在完成时与过去时混淆",
+      "error_example": "I have seen him yesterday.",
+      "correction": "I saw him yesterday.",
+      "explanation": "yesterday 是明确的过去时间状语，不能与现在完成时连用，应使用一般过去时。",
+      "keywords": ["present perfect", "past tense", "time adverbial"]
+    },
+    {
+      "id": "g003",
+      "category": "冠词",
+      "pattern": "可数名词单数前缺少冠词",
+      "error_example": "I have important meeting tomorrow.",
+      "correction": "I have an important meeting tomorrow.",
+      "explanation": "可数名词单数 (meeting) 前通常需要冠词 (a/an/the) 或其他限定词。",
+      "keywords": ["article", "countable noun", "singular"]
+    },
+    {
+      "id": "g004",
+      "category": "冠词",
+      "pattern": "不可数名词前误用不定冠词",
+      "error_example": "She gave me a good advice.",
+      "correction": "She gave me good advice.",
+      "explanation": "advice 为不可数名词，不能与不定冠词 a/an 连用。可用 some 或 a piece of 修饰。",
+      "keywords": ["uncountable noun", "article", "advice", "information", "furniture"]
+    },
+    {
+      "id": "g005",
+      "category": "介词",
+      "pattern": "动词固定搭配中的介词错误",
+      "error_example": "I am looking forward to see you.",
+      "correction": "I am looking forward to seeing you.",
+      "explanation": "look forward to 中的 to 是介词，后面应接动名词 (seeing)，而不是动词原形。",
+      "keywords": ["preposition", "gerund", "phrasal verb", "look forward to"]
+    },
+    {
+      "id": "g006",
+      "category": "介词",
+      "pattern": "时间介词混淆 (in/on/at)",
+      "error_example": "I was born in July 15th, 2000.",
+      "correction": "I was born on July 15th, 2000.",
+      "explanation": "具体日期前用 on，月份/年份/季节前用 in，具体时间前用 at。",
+      "keywords": ["preposition", "time", "in", "on", "at"]
+    },
+    {
+      "id": "g007",
+      "category": "非谓语动词",
+      "pattern": "动词后接 to do 还是 doing 混淆",
+      "error_example": "I enjoy to read books.",
+      "correction": "I enjoy reading books.",
+      "explanation": "enjoy 后只能接动名词 (doing)，不能接不定式 (to do)。类似动词还有: avoid, suggest, finish, mind 等。",
+      "keywords": ["gerund", "infinitive", "enjoy", "suggest", "avoid"]
+    },
+    {
+      "id": "g008",
+      "category": "语态",
+      "pattern": "被动语态缺少 be 动词",
+      "error_example": "The book written by Mark Twain.",
+      "correction": "The book was written by Mark Twain.",
+      "explanation": "被动语态的完整结构为 be + 过去分词，不能省略 be 动词。",
+      "keywords": ["passive voice", "be verb", "past participle"]
+    },
+    {
+      "id": "g009",
+      "category": "比较级",
+      "pattern": "比较级结构不完整",
+      "error_example": "She is more smarter than her brother.",
+      "correction": "She is smarter than her brother.",
+      "explanation": "单音节形容词直接加 -er 构成比较级，不需要 more。more 用于多音节形容词。",
+      "keywords": ["comparative", "double comparison", "more"]
+    },
+    {
+      "id": "g010",
+      "category": "从句",
+      "pattern": "定语从句关系代词误用",
+      "error_example": "This is the book which I bought it yesterday.",
+      "correction": "This is the book which I bought yesterday.",
+      "explanation": "定语从句中，关系代词 (which) 已经代替了宾语位置，不需要再用 it。",
+      "keywords": ["relative clause", "pronoun", "double object"]
+    },
+    {
+      "id": "g011",
+      "category": "虚拟语气",
+      "pattern": "if 条件句语气错误",
+      "error_example": "If I was you, I would accept the offer.",
+      "correction": "If I were you, I would accept the offer.",
+      "explanation": "与现在事实相反的虚拟条件中，be 动词必须用 were，不论主语是什么。",
+      "keywords": ["subjunctive", "if clause", "were"]
+    },
+    {
+      "id": "g012",
+      "category": "词性混淆",
+      "pattern": "形容词与副词混淆",
+      "error_example": "She speaks English very good.",
+      "correction": "She speaks English very well.",
+      "explanation": "修饰动词 (speaks) 需要用副词 (well)，而不是形容词 (good)。",
+      "keywords": ["adjective", "adverb", "modifier"]
+    },
+    {
+      "id": "g013",
+      "category": "代词",
+      "pattern": "代词指代不清",
+      "error_example": "Tom told his father that he had made a mistake.",
+      "correction": "Tom said to his father, \"I have made a mistake.\"",
+      "explanation": "原句中 he 指代不明确（Tom 还是 father），应改写为直接引语或明确指代。",
+      "keywords": ["pronoun", "ambiguity", "reference"]
+    },
+    {
+      "id": "g014",
+      "category": "倒装",
+      "pattern": "否定副词前置时缺少倒装",
+      "error_example": "Never I have seen such a beautiful sunset.",
+      "correction": "Never have I seen such a beautiful sunset.",
+      "explanation": "否定副词 (Never, Seldom, Hardly, etc.) 位于句首时，主语和谓语动词需要部分倒装。",
+      "keywords": ["inversion", "negative adverbial", "never", "hardly", "seldom"]
+    },
+    {
+      "id": "g015",
+      "category": "连接词",
+      "pattern": "Although 与 but 连用",
+      "error_example": "Although it was raining, but we went out.",
+      "correction": "Although it was raining, we went out.",
+      "explanation": "英语中 although/though 与 but 不能同时使用，选择一个即可。",
+      "keywords": ["conjunction", "although", "but", "double conjunction"]
+    },
+    {
+      "id": "g016",
+      "category": "数词",
+      "pattern": "序数词前缺少 the",
+      "error_example": "He is first person to arrive.",
+      "correction": "He is the first person to arrive.",
+      "explanation": "序数词 (first, second, third...) 前通常需要加定冠词 the。",
+      "keywords": ["ordinal number", "article", "first", "the"]
+    },
+    {
+      "id": "g017",
+      "category": "并列结构",
+      "pattern": "并列成分形式不一致",
+      "error_example": "She likes swimming, dancing, and to run.",
+      "correction": "She likes swimming, dancing, and running.",
+      "explanation": "并列连词 and/or 连接的部分应在语法形式上保持一致（平行结构）。",
+      "keywords": ["parallelism", "consistency", "gerund", "infinitive"]
+    },
+    {
+      "id": "g018",
+      "category": "中式英语",
+      "pattern": "there be + 有",
+      "error_example": "There are many people have this problem.",
+      "correction": "There are many people who have this problem.",
+      "explanation": "There be 结构不能直接再接一个动词，需用定语从句或分词结构连接。",
+      "keywords": ["Chinglish", "there be", "relative clause"]
+    },
+    {
+      "id": "g019",
+      "category": "中式英语",
+      "pattern": "「很」字直译",
+      "error_example": "I very like English.",
+      "correction": "I like English very much.",
+      "explanation": "very 只能修饰形容词或副词，不能直接修饰动词。修饰动词喜欢用 very much 或 really。",
+      "keywords": ["Chinglish", "very", "modifier", "verb"]
+    },
+    {
+      "id": "g020",
+      "category": "拼写",
+      "pattern": "常见拼写混淆词",
+      "error_example": "Their going to the park over there.",
+      "correction": "They're going to the park over there.",
+      "explanation": "Their (物主代词), There (地点), They're (They are 缩写) 三者容易混淆。",
+      "keywords": ["homophone", "their", "there", "they're", "your", "you're"]
+    }
+  ]
+}

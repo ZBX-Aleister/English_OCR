@@ -1,0 +1,30 @@
+# API Key (never commit)
+api_key.txt
+
+# Models (large files, download separately)
+models/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+
+# Claude
+.claude/
+
+# Gradio temp
+.gradio/

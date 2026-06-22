@@ -1,0 +1,5 @@
+{
+  "num_entries": 254,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "dim": 384
+}

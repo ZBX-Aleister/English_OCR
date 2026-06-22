@@ -1,0 +1,86 @@
+{
+  "description": "考研/四六级标准例句库 - 用于知识库检索和参考",
+  "version": "1.0",
+  "entries": [
+    {
+      "sentence": "Education is not preparation for life; education is life itself.",
+      "source": "John Dewey",
+      "topic": "教育",
+      "level": "CET4",
+      "usage": "议论文引用，强调教育的重要性",
+      "notes": "分号连接两个并列句，对比结构"
+    },
+    {
+      "sentence": "The only way to do great work is to love what you do.",
+      "source": "Steve Jobs",
+      "topic": "职业/人生",
+      "level": "CET4",
+      "usage": "励志主题写作",
+      "notes": "the only way to do... is to... 固定句型"
+    },
+    {
+      "sentence": "In the face of adversity, she demonstrated remarkable resilience and determination.",
+      "source": "常见写作模板",
+      "topic": "品质/毅力",
+      "level": "CET6",
+      "usage": "人物描写，论述毅力",
+      "notes": "in the face of 面临；resilience 坚韧"
+    },
+    {
+      "sentence": "Technology has fundamentally transformed the way we communicate, work, and learn.",
+      "source": "科技类话题",
+      "topic": "科技",
+      "level": "CET4",
+      "usage": "科技影响类论述开头",
+      "notes": "fundamentally transformed; 三个并列动词"
+    },
+    {
+      "sentence": "It is widely acknowledged that environmental protection requires collective effort.",
+      "source": "环境类话题",
+      "topic": "环境",
+      "level": "CET4",
+      "usage": "环境类议论文",
+      "notes": "It is widely acknowledged that... 固定句型"
+    },
+    {
+      "sentence": "The rapid development of artificial intelligence has raised both excitement and concern.",
+      "source": "AI类话题",
+      "topic": "人工智能",
+      "level": "CET6",
+      "usage": "AI话题引入",
+      "notes": "both... and... 并列结构；raise concern 引起关注"
+    },
+    {
+      "sentence": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+      "source": "Winston Churchill",
+      "topic": "成功/失败",
+      "level": "CET4",
+      "usage": "论述成功与失败",
+      "notes": "it is... that... 强调句；final vs fatal 对比"
+    },
+    {
+      "sentence": "The government has implemented a series of measures to alleviate poverty.",
+      "source": "政策类话题",
+      "topic": "社会/政策",
+      "level": "CET4",
+      "usage": "政策描述",
+      "notes": "implement measures 实施措施；alleviate 减轻"
+    },
+    {
+      "sentence": "Reading extensively can broaden your horizons and enrich your knowledge.",
+      "source": "阅读类话题",
+      "topic": "学习/阅读",
+      "level": "CET4",
+      "usage": "阅读/学习类论述",
+      "notes": "broaden horizons 开阔视野；enrich knowledge 丰富知识"
+    },
+    {
+      "sentence": "Cultural diversity should be celebrated rather than merely tolerated.",
+      "source": "文化类话题",
+      "topic": "文化",
+      "level": "CET6",
+      "usage": "文化多元性论述",
+      "notes": "rather than 而不是；celebrate vs tolerate 对比"
+    }
+  ]
+}
