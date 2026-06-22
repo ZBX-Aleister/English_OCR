@@ -67,6 +67,10 @@ class OCREngine:
                 "注意: 首次运行时 EasyOCR 会自动下载英文识别模型 (~68MB)"
             )
 
+        # Fix SSL cert issue on some cloud servers
+        import ssl
+        ssl._create_default_https_context = ssl._create_unverified_context
+
         try:
             gpu = OCR_GPU_ENABLED
             self._reader = easyocr.Reader(
